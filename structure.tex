@@ -1,0 +1,47 @@
+    \begin{Spacing}{0.75}%
+    \noindent
+    \textbf{\firstName \lastName}\\
+    \tiny \jobDescription \hfill {\color{gray}\companyName}\\ 
+    \rule{74mm}{.3mm}\\
+    \begin{minipage}[t]{33mm}
+        \vspace{-0mm}%
+        \begin{pspicture}(25mm,25mm)
+        \psbarcode{
+        BEGIN:VCARD;
+        VERSION;4.0;
+        N:\lastName;\firstName;;;;
+        ORG:\companyName;
+        URL;WORK:\url;
+        EMAIL;INTERNET:\email;
+        TEL;CELL:\mobile;
+        %TITLE:\jobDescription;
+        KEY;MEDIATYPE=application/pgp-keys:\gpgUrl;
+        END:VCARD
+        }{eclevel=L width=1 height=1}{qrcode}        \end{pspicture}        
+    \end{minipage}
+    \hspace{1mm}
+    \begin{minipage}[t]{42mm}
+        \vspace{-0mm}%
+        \begin{flushleft}
+        {\scriptsize
+            \begin{Spacing}{1}%
+            \textbf{\serviceA}\\
+            \hspace{5mm}\serviceB\\
+            \hspace{5mm}\serviceC\\
+            \hspace{5mm}\serviceD \vspace{2mm}\\
+            \end{Spacing}
+        }
+        {\tiny
+        	\begin{tabular}{rl}
+            	{\color{gray}web} & \url\\
+            	{\color{gray}email} & \email\\
+            	{\color{gray}mobile} & \mobile\\
+            \end{tabular}
+            \vspace*{2mm}
+        }
+        \end{flushleft}
+    \end{minipage}
+    \vspace{2mm}%
+    \rule{74mm}{0mm}\\
+    \texttt{\fontsize{2.84mm}{3.55mm}\selectfont \gpg}
+    \end{Spacing}

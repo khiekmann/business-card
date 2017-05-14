@@ -1,8 +1,8 @@
     \begin{Spacing}{0.75}%
     \noindent
-    \textbf{\firstName \lastName}\\
+    \textbf{\firstName \lastName} \hfill {\color{gray}\tiny \version} \\
     \tiny \jobDescription \hfill {\color{gray}\companyName}\\ 
-    \rule{74mm}{.3mm}\\
+    \rule{74.8mm}{.3mm}\\
     \begin{minipage}[t]{33mm}
         \vspace{-0mm}%
         \begin{pspicture}(25mm,25mm)
@@ -17,7 +17,8 @@
         %TITLE:\jobDescription;
         KEY;MEDIATYPE=application/pgp-keys:\gpgUrl;
         END:VCARD
-        }{eclevel=L width=1 height=1}{qrcode}        \end{pspicture}        
+        }{eclevel=L width=1 height=1}{qrcode}        
+        \end{pspicture}        
     \end{minipage}
     \hspace{1mm}
     \begin{minipage}[t]{42mm}
@@ -43,5 +44,8 @@
     \end{minipage}
     \vspace{2mm}%
     \rule{74mm}{0mm}\\
-    \texttt{\fontsize{2.84mm}{3.55mm}\selectfont \gpg}
+    \texttt{\fontsize{2.97mm}{3.55mm}\selectfont \gpg}
+%    \begin{flushright}    
+%        {\color{gray}\tiny \version}
+%    \end{flushright}
     \end{Spacing}
